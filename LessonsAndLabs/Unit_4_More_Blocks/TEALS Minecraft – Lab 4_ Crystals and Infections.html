@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://tealsk12.github.io/teals-minecraft/site/labs/lab4.html -->
+<html class=" FB_FW_ext GCPlugin2"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TEALS Minecraft – Lab 4: Crystals and Infections</title>
+<link rel="stylesheet" href="./TEALS Minecraft – Lab 4_ Crystals and Infections_files/site.css">
+
+
+
+<style type="text/css" id="c8781b17-77bd-4b7c-a298-65e1dbbd38fc">.ac5085de-a184-4efc-b554-3c34e6293752 { position: relative !important; border-radius: 0.2em !important; padding: 0px !important; margin: 0px !important; }
+
+.c3834647-cffc-4bef-89a2-6abd0c177973 .ssh-close { position: absolute; left: -8px; top: -8px; width: 16px; height: 16px; z-index: 999; border: none; background: url("data:image/png;base64,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") no-repeat border-box; animation-duration: 275ms; animation-timing-function: ease-out; box-shadow: none; animation-name: bb9be871-f2f6-4c0b-ae5c-cba9d7e481c5; }
+
+.c3834647-cffc-4bef-89a2-6abd0c177973 .ssh-close:hover, .c3834647-cffc-4bef-89a2-6abd0c177973 .ssh-close:focus { background-image: url("data:image/png;base64,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"); }
+
+@media print {
+  .c3834647-cffc-4bef-89a2-6abd0c177973 { box-shadow: unset !important; -webkit-print-color-adjust: exact !important; }
+}
+
+@keyframes bb9be871-f2f6-4c0b-ae5c-cba9d7e481c5 { 
+  0% { opacity: 0; transform: scale(0.6); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes d9cea055-8eff-40d5-b9ea-5bf5cf7f6e9c { 
+  100% { opacity: 0; transform: scale(0.3); }
+}
+
+.c3834647-cffc-4bef-89a2-6abd0c177973 { background-color: rgba(238, 238, 238, 0.8); color: rgb(170, 170, 170); font: inherit; box-shadow: rgb(238, 238, 238) 0px 0px 0.35em; text-shadow: none !important; }
+
+.default-red-aa94e3d5-ab2f-4205-b74e-18ce31c7c0ce { box-shadow: rgb(255, 128, 128) 0px 0px 0.35em; background-color: rgba(255, 128, 128, 0.8) !important; color: rgb(0, 0, 0) !important; }
+
+.default-orange-da01945e-1964-4d27-8a6c-3331e1fe7f14 { box-shadow: rgb(255, 210, 170) 0px 0px 0.35em; background-color: rgba(255, 210, 170, 0.8) !important; color: rgb(0, 0, 0) !important; }
+
+.default-yellow-aaddcf5c-0e41-4f83-8a64-58c91f7c6250 { box-shadow: rgb(255, 255, 170) 0px 0px 0.35em; background-color: rgba(255, 255, 170, 0.8) !important; color: rgb(0, 0, 0) !important; }
+
+.default-green-c4d41e0a-e40f-4c3f-91ad-2d66481614c2 { box-shadow: rgb(170, 255, 170) 0px 0px 0.35em; background-color: rgba(170, 255, 170, 0.8) !important; color: rgb(0, 0, 0) !important; }
+
+.default-cyan-f88e8827-e652-4d79-a9d9-f6c8b8ec9e2b { box-shadow: rgb(170, 255, 255) 0px 0px 0.35em; background-color: rgba(170, 255, 255, 0.8) !important; color: rgb(0, 0, 0) !important; }
+
+.default-purple-c472dcdb-f2b8-41ab-bb1e-2fb293df172a { box-shadow: rgb(255, 170, 255) 0px 0px 0.35em; background-color: rgba(255, 170, 255, 0.8) !important; color: rgb(0, 0, 0) !important; }
+
+.default-grey-da7cb902-89c6-46fe-b0e7-d3b35aaf237a { box-shadow: rgb(119, 119, 119) 0px 0px 0.35em; background-color: rgba(119, 119, 119, 0.8) !important; color: rgb(255, 255, 255) !important; }</style></head><body><h1 class="lab">Lab 4: Crystals and Infections</h1>
+<div id="content">
+
+  <h2>Objective</h2>
+  <div class="indented">
+    <p>In lab 4, you will continue to create custom blocks. You will be creating a block and item
+    that generate crystal towers of random height, and an "infection" block that infects the
+    Minecraft world whenever a player draws near.
+  </p></div>
+
+  <h2 id="notes">Notes</h2>
+  <div class="indented">
+
+    <h4>Test to see if a block is dirt</h4> <div class="indented">
+      <p class="noSpaceBefore">
+      <code>if (someBlock.equals(Blocks.dirt)) { ... }</code>
+    </p></div>
+
+    <h4>Get block at location x, y, z.</h4> <div class="indented">
+      <p class="noSpaceBefore">
+      Use <code>Block block = world.getBlock(x, y, z)</code>.
+    </p></div>
+
+    <h4>Set block at location x, y, z.</h4> <div class="indented">
+      <p class="noSpaceBefore">
+      Use <code>world.setBlock(x, y, z, blockType)</code>.
+    </p></div>
+
+    <h4>Block types used in this lab:</h4> <div class="indented">
+      <ul class="noSpaceBefore noPadding compact noBullet">
+        <li><code>Blocks.air</code>
+        </li><li><code>Blocks.gold_block</code>
+        </li><li><code>Blocks.coal_block</code>
+        </li><li><code>Blocks.leaves</code>
+        </li><li><code>Blocks.log</code>
+      </li></ul>
+    </div>
+
+    <h4>Set block step sound</h4> <div class="indented">
+      <p class="noSpaceBefore"> This is the sound the block makes when you step on it:
+      <code>setStepSound(Block.soundTypeXXX)</code>.
+    </p></div>
+
+  </div>
+
+  <h2>Tasks</h2>
+  <div class="indented">
+
+    <h3>Part 1 — Create a crystal-growing block</h3>
+    <div class="indented">
+
+      <p>For part 1, you will create a block that grows a crystal of random height, from 10 to 20
+      blocks above the base block.
+
+      </p><ol>
+        <li> Create a new class that extends Block called <code>CrystalGrowingBlock</code>. The
+          public constructor should accept a <code>Material</code> parameter that is passed to the
+          super class. Set the creative tab <code>CreativeTabs.tabBlock</code>, and set the
+          hardness to 40.0.
+
+        </li><li> In your <code>BlocksModule</code> class, register the new
+          <code>CrystalGrowingBlock</code> with texture name <code>"crystal_growing_block"</code>,
+          using a new <code>CrystalGrowingBlock</code> instance with material
+          <code>Material.glass</code>, with display name "Crystal Growing Block".
+
+        </li><li> Create a new class <code>CrystalGrowingItem</code> that extends <code>Item</code>.
+          The public constructor takes no parameters, and just sets the creative tab to
+          <code>CreativeTab.tabTools</code>.
+
+        </li><li> In <code>ItemsModule.java</code>, add an entry for <code>CrystalGrowingItem</code>,
+          using texture name "crystal_growing_item", and display name "Crystal Growing Item".
+
+        </li><li>Implement the <code>onItemUse(...)</code> method of the new
+          <code>CrystalGrowingItem</code> class. Here's the method signature:
+<codeblock class="indented">
+public boolean onItemUse (
+  ItemStack item,               // Items in the player's inventory
+  EntityPlayer player,
+  World world,
+  int x, int y, int z,          // Location of block (can be air) the player clicked
+  int side,                     // Cube face the player clicked
+  float px, float py, float pz  // Player's location in the world
+)</codeblock>
+          <p> In this method, get the block at the item use location. If it's a
+          <code>CrystalGrowingBlock</code>, and if the block above is air, then pick a random
+          crystal height from 10 to 20 above the <code>CrystalGrowingBlock</code>. Replace the
+          blocks above the <code>CrystalGrowingBlock</code> with gold blocks, and replace the
+          original <code>CrystalGrowingBlock</code> with coal.
+
+        </p></li><li> Always return <code>true</code> from the <code>onItemUse</code> function.
+
+      </li></ol>
+
+    </div>
+
+    <h3>Part 2 — Quick Change to <code>BlocksModule</code> and <code>ItemsModule</code></h3>
+    <div class="indented">
+      <p> At this point, you have four custom block types (amethyst ore, battery block, checkered
+      block, and crystal growing block) and two custom item types (rock sifter and crystal growing
+      item). You can reference standard blocks like Blocks.coal_block or Blocks.air, but you
+      cannot easily reference our own custom blocks. To help make this easier, you're going to
+      <i>refactor</i> our code a bit. Code refactoring is the process of cleaning up, simplifying,
+      or otherwise improving existing code without changing any functionality. For this change,
+      you'll make it easier to reference our custom blocks and items.
+
+      </p><ol>
+        <li> Open up ItemsModule.java in the editor. Add the following two declarations above the
+          <code>onLoad()</code> method:
+<codeblock class="indented">
+public static final RockSifter          rockSifter         = new RockSifter();
+public static final CrystalGrowingItem  crystalGrowingItem = new CrystalGrowingItem();</codeblock>
+
+        </li><li> <p>Now change the <code>onLoad()</code> method to use the new instance variables,
+          like so:
+<codeblock class="indented">public void onLoad() {
+    parentMod.itemRegistry.newInstance (
+        "rock_sifter",          rockSifter,         "Rock Sifter");
+    parentMod.itemRegistry.newInstance(
+        "crystal_growing_item", crystalGrowingItem, "Crystal Growing Item");
+}</codeblock>
+
+        </p></li><li> Now you're going to do the same for the <code>BlocksModule</code> class, which you'll
+          find in src/tealsmc.mods/blocks. Use the same pattern as for the
+          <code>ItemsModule</code>, where you declare an instance variable for each block
+          instance, and refer to that instance variable in the <code>newInstance</code> call.
+
+        </li><li> <p>At this point, you should be able to set a given world block to a
+          <code>BatteryBlock</code> like so:
+            <codeblock class="indented">world.setBlock(x,y,z, BlocksModule.batteryBlock);</codeblock>
+      </p></li></ol>
+    </div>
+
+    <h3>Part 3 — Create an infection block</h3>
+    <div class="indented">
+
+      <p> For part 3, you will create a block that spreads and infects neighboring blocks.</p><p>
+
+      </p><ol>
+        <li> For this new block, you'll need another new texture: <code>infected_block.png</code>.
+          Get this image file from your instructor, and add it to
+          <code>src/main/java/resources/assets.tealsmodloader.textures/blocks</code>.
+
+        </li><li> Create a new block <code>InfectedBlock</code> that extends Block. Just like for
+          <code>CrystalGrowingBlock</code>, the <code>InfectedBlock</code> public constructor
+          takes a <code>Material</code> parameter and passes it to the super class. When constructing the
+          block object, set the material to <code>Material.glass</code>. The CreativeTab is 
+          <code>CreativeTabs.tabBlock</code>. For this block set the step sound
+          (see the <a href="https://tealsk12.github.io/teals-minecraft/site/labs/lab4.html#notes">notes</a> above) to <code>Block.soundTypeCloth</code>.
+
+        </li><li> Now add the new <code>InfectedBlock</code> to the <code>BlocksModule</code> class,
+          using the new style of instance variables you converted to in part 2 of this lab. This
+          will come in handy below when you may want to set a neighboring block to another
+          infected block. The texture name for the infected block is "infected_block".
+
+        </li><li> You want the infected block to infect other blocks at random intervals in time. To do
+          this, you will override the <code>randomDisplayTick()</code> method, which has the
+          following signature:
+<codeblock class="indented">
+public void randomDisplayTick(World world, int x, int y, int z, Random random)
+</codeblock>
+          <p> For our purposes, you'll only use the world, x, y and z parameters.
+
+        </p></li><li> In the <code>randomDisplayTick()</code> method, select a random neighbor to the
+          block: up to one unit away in X, Y or Z, or any combination (that is, any one of the 26
+          neighboring blocks).
+
+        </li><li> Don't infect air.
+
+        </li><li> Only infect blocks with a hardness less than 10.
+
+        </li><li> If you are ok to infect the neighboring block, change it to an
+          <code>InfectedBlock</code> using the <code>world.setBlock</code> method and our
+          <code>BlocksModule.infectedBlock</code> instance variable.
+
+        </li><li> Fire up Minecraft and test out the infected block. You should see the infection
+          spread when you are in the area, and stop infecting once you're far enough away.
+
+      </li></ol>
+    </div>
+
+  </div> <!-- tasks -->
+        
+</div> <!-- content -->
+
+
+<div id="footer">
+  <div class="prev"><a href="https://tealsk12.github.io/teals-minecraft/site/labs/lab3.html">◀ Lab 3</a></div>
+  <div class="home"><a href="https://tealsk12.github.io/teals-minecraft/site/units.html">Home</a></div>
+  <div class="next"><a href="https://tealsk12.github.io/teals-minecraft/site/labs/lab5.html">Lab 5 ▶</a></div>
+</div>
+</body></html>

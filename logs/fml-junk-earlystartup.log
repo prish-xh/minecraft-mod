@@ -1,0 +1,13 @@
+[13:42:47] [main/INFO] [GradleStart]: Extra: []
+[13:50:26] [main/INFO] [GradleStart]: Extra: []
+[13:50:40] [main/INFO] [GradleStart]: Extra: []
+[10:57:04] [main/INFO] [GradleStart]: Extra: []
+[11:04:41] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraft.launchwrapper.VanillaTweaker
+[11:04:41] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraft.launchwrapper.VanillaTweaker
+[11:04:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraft.launchwrapper.VanillaTweaker
+[11:04:42] [main/ERROR] [LaunchWrapper]: Unable to launch
+java.lang.NoSuchMethodException: net.minecraft.client.Minecraft.main([Ljava.lang.String;)
+	at java.lang.Class.getMethod(Unknown Source) ~[?:1.8.0_231]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:132) [launchwrapper-1.11.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
+[11:05:18] [main/INFO] [GradleStart]: Extra: []

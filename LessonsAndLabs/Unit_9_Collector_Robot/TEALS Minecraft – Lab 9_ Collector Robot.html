@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://tealsk12.github.io/teals-minecraft/site/labs/lab9.html -->
+<html class=" FB_FW_ext GCPlugin2"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TEALS Minecraft – Lab 9: Collector Robot</title>
+<link rel="stylesheet" href="./TEALS Minecraft – Lab 9_ Collector Robot_files/site.css">
+
+
+
+<style type="text/css" id="ae8b771b-45a7-43c7-aa91-b2570a31bff7">.fb3b7d4c-bd2b-452e-8140-8aeae0cdd3ff { position: relative !important; border-radius: 0.2em !important; padding: 0px !important; margin: 0px !important; }
+
+.ac6ed2fd-f691-4656-a6be-1742649c530b .ssh-close { position: absolute; left: -8px; top: -8px; width: 16px; height: 16px; z-index: 999; border: none; background: url("data:image/png;base64,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") no-repeat border-box; animation-duration: 275ms; animation-timing-function: ease-out; box-shadow: none; animation-name: bd996c04-cfa6-4bd4-9d01-9eb9160fc729; }
+
+.ac6ed2fd-f691-4656-a6be-1742649c530b .ssh-close:hover, .ac6ed2fd-f691-4656-a6be-1742649c530b .ssh-close:focus { background-image: url("data:image/png;base64,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"); }
+
+@media print {
+  .ac6ed2fd-f691-4656-a6be-1742649c530b { box-shadow: unset !important; -webkit-print-color-adjust: exact !important; }
+}
+
+@keyframes bd996c04-cfa6-4bd4-9d01-9eb9160fc729 { 
+  0% { opacity: 0; transform: scale(0.6); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes ded59058-21cb-42ea-9b91-613768cefe0f { 
+  100% { opacity: 0; transform: scale(0.3); }
+}
+
+.ac6ed2fd-f691-4656-a6be-1742649c530b { background-color: rgba(238, 238, 238, 0.8); color: rgb(170, 170, 170); font: inherit; box-shadow: rgb(238, 238, 238) 0px 0px 0.35em; text-shadow: none !important; }
+
+.default-red-aa94e3d5-ab2f-4205-b74e-18ce31c7c0ce { box-shadow: rgb(255, 128, 128) 0px 0px 0.35em; background-color: rgba(255, 128, 128, 0.8) !important; color: rgb(0, 0, 0) !important; }
+
+.default-orange-da01945e-1964-4d27-8a6c-3331e1fe7f14 { box-shadow: rgb(255, 210, 170) 0px 0px 0.35em; background-color: rgba(255, 210, 170, 0.8) !important; color: rgb(0, 0, 0) !important; }
+
+.default-yellow-aaddcf5c-0e41-4f83-8a64-58c91f7c6250 { box-shadow: rgb(255, 255, 170) 0px 0px 0.35em; background-color: rgba(255, 255, 170, 0.8) !important; color: rgb(0, 0, 0) !important; }
+
+.default-green-c4d41e0a-e40f-4c3f-91ad-2d66481614c2 { box-shadow: rgb(170, 255, 170) 0px 0px 0.35em; background-color: rgba(170, 255, 170, 0.8) !important; color: rgb(0, 0, 0) !important; }
+
+.default-cyan-f88e8827-e652-4d79-a9d9-f6c8b8ec9e2b { box-shadow: rgb(170, 255, 255) 0px 0px 0.35em; background-color: rgba(170, 255, 255, 0.8) !important; color: rgb(0, 0, 0) !important; }
+
+.default-purple-c472dcdb-f2b8-41ab-bb1e-2fb293df172a { box-shadow: rgb(255, 170, 255) 0px 0px 0.35em; background-color: rgba(255, 170, 255, 0.8) !important; color: rgb(0, 0, 0) !important; }
+
+.default-grey-da7cb902-89c6-46fe-b0e7-d3b35aaf237a { box-shadow: rgb(119, 119, 119) 0px 0px 0.35em; background-color: rgba(119, 119, 119, 0.8) !important; color: rgb(255, 255, 255) !important; }</style></head><body><h1 class="lab">Lab 9: Collector Robot</h1>
+<div id="content">
+
+  <h2>Objective</h2>
+  <div class="indented">
+    <p> In lab 9, you will create a robot that wanders around the map looking for loose items
+    like gold or diamond and collecting them. If the entity takes any damage (either by wandering
+    into a bad situation, getting attacked by other entities, or getting attacked by other
+    players), it drops all of its items and stumbles around for twenty seconds until it has
+    recovered enough to continue collecting stuff. While it's dazed, nearby players then have a
+    chance to grab the collector bot's loot before it comes to its senses.
+  </p></div>
+
+  <!-- ======================================================================================= -->
+  <h2 id="notes">Notes</h2>
+  <div class="indented">
+
+    <h4>To Spawn An Entity In Game</h4>
+    <ul class="noSpaceBefore">
+      <li>Type "<code>/robot <u>entity</u></code>", where <u>entity</u> is the name of the
+        registered robot.
+      </li><li><em>For this lab, it would be </em>"<kbd>/robot collector</kbd>"
+    </li></ul>
+
+    <h4>To Add a New Task with a Specific Priority</h4>
+    <div class="indented">
+      <codeblock>void tasks.addTask (int <var>priority</var>, EntityAIBase <var>task</var>)</codeblock>
+    </div>
+
+    <h4>To Get A List&lt;Entity&gt; Of All Entities In An Entity's World</h4>
+    <div class="indented">
+      <codeblock>List&lt;Entity&gt; <var>entityList</var> = (List&lt;Entity&gt;) entity.worldObj.getLoadedEntityList();</codeblock>
+      <p> Each item in this list is of type <code>Entity</code>.
+    </p></div>
+
+    <h4>Robot Navigation (Pathfinding)</h4>
+    <div class="indented">
+      <codeblock>entity.getNavigator().tryMoveToEntityLiving(Entity <var>other</var>, float <var>speed</var>);</codeblock>
+      <p>For the <code>float speed</code> parameter, use <code>Robot.SPEED_FAST</code>,
+      <code>Robot.SPEED_NORMAL</code>, or <code>Robot.SPEED_SLOW</code>.
+
+      <codeblock>entity.getNavigator().clearPathEntity();   // Stop robot navigation</codeblock>
+    </p></div>
+
+    <h4>Getting Distance Between Two Entities</h4>
+    <div class="indented">
+      <codeblock>float distance = entity1.getDistanceToEntity(entity2);</codeblock>
+    </div>
+
+    <h4>Adding &amp; Removing Items In The World</h4>
+    <div class="indented">
+<codeblock>void dropItem (Item <var>item</var>, int <var>amount</var>);
+item.worldObj.removeEntity(EntityItem <var>item</var>);</codeblock>
+    </div>
+
+    <h4>Managing <code>EntityItem</code>'s and <code>ItemStack</code>.</h4>
+    <div class="indented">
+<codeblock>ItemStack itemStack = entityItem.getEntityItem();
+int amount = itemStack.stackSize;
+Item item = itemStack.getItem();
+String printableItemName = item.getUnlocalizedName();    // For Debugging</codeblock>
+    </div>
+
+    <h4>Hash Map Methods</h4>
+    <div class="indented">
+<codeblock>boolean hashMap.contains(<var>key</var>);  // Checks for existence of a key
+void hashMap.put (<var>key</var>, <var>value</var>);  // Adds an entry
+ValueType hashMap.remove (<var>key</var>); // Removes an entry
+ValueType hashMap.get (<var>key</var>);    // Just examines an entry
+
+// Constructing HashMaps
+HashMap&lt;KeyType,ValueType&gt; hashMap = new HashMap&lt;KeyType,ValueType&gt;();
+
+Set&lt;KeyType&gt; keySet = hashMap.keySet();   // Getting a set of all keys in a hash map
+
+// Examining the contents of a hash map
+for (KeyType key : hashMap.keySet()) {
+  ValueType value = hashMap.get(key);
+}
+
+void hashMap.clear();     // Clears a hash map</codeblock>
+    </div>
+
+    <h4>Robot Damage Events</h4>
+    <div class="indented">
+      <codeblock>public void Robot.onEntityDamage (DamageSource <var>source</var>, float <var>amount</var>);</codeblock>
+      
+      <p>This method is called whenever the robot receives any kind of damage. You won't care
+      about the type or amount of damage, but you will drop the robot's inventory and start a stun
+      cycle whenever it happens.
+    </p></div>
+
+    <h4>System Time</h4>
+    <div class="indented">
+      <codeblock>long System.currentTimeMillis()</codeblock>
+
+      <p>The above method gets the number of milliseconds since January 1, 1970. You can use this
+      value to figure out the current time. For our purposes, where we need <em>elapsed</em> time,
+      you will only care about the <em>difference</em> between timestamps.
+
+      </p><p>For example:
+
+<codeblock>long timeThreeSecondsFromNow = (long)(3.0 * 1000) + System.currentTimeMillis();
+boolean threeSecondsElapsed = System.currentTimeMillis() &gt; timeThreeSecondsFromNow;</codeblock>
+    </p></div>
+
+  </div>
+
+  <!-- ======================================================================================= -->
+  <h2>Tasks</h2>
+  <div id="tasks" class="indented">
+
+
+    <h3>Part 1 — Stub In The New <code>CollectorBot</code> Entity</h3>
+    <ol>
+      <li> Start by creating a new class called <code>CollectorBot</code> that extends the
+        <code>Robot</code> class. Implement the default constructor that takes in a
+        <code>net.minecraft.world.World</code> object as its parameter. Call the super
+        constructor with that world parameter.
+
+      </li><li> In the constructor, add the <code>EntityAIWander</code> task with priority 1.
+        When you create the <code>EntityAIWander</code> task, pass in this new collector
+        bot and a speed of <code>SPEED_NORMAL</code>.
+
+      </li><li> Add the new robot to the <code>EntitiesModule</code> class. Register the
+        <code>CollectorBot</code> with a name of "collector", and a texture of "gold_robot".
+
+      </li><li> Start up the game and issue the command "<kbd>/robot collector</kbd>". You should see a
+        gold-colored robot that wanders around the map and does nothing else.
+    </li></ol>
+
+
+    <h3>Part 2 — Stub In A New <code>EntityAICollectLoot</code> Task</h3>
+    <ol>
+      <li> Create a new class called <code>EntityAICollectLoot</code> that extends
+        <code>EntityAIBase</code>.
+
+      </li><li> The constructor takes a <code>CollectorBot</code> and a <code>float</code> search
+        radius. Store both of these values in member variables of the new task.
+
+      </li><li> Override the methods <code>public boolean shouldExecute()</code> and
+        <code>public boolean continueExecuting()</code>. The collection task will run all the
+        time at first, so both of these methods should just return true.
+
+      </li><li> Stub in the override method <code>public void updateTask()</code>. For now, just return
+        immediately.
+
+      </li><li> In the <code>CollectorBot</code> constructor, create a new
+        <code>EntityAICollectLoot</code> task. The collect-loot task's constructor will take the
+        new collector bot's reference and a search radius. Use a search radius of 10. You'll need
+        to have access to this task later on, so store a reference to it in a local class member
+        variable. Finally, add this task with priority 2.
+
+      </li><li> Verify your code so far by running the game and issuing the command "<kbd>/robot
+        collector</kbd>". You should see a gold-colored robot that still just wanders around the
+        map and does nothing else (since the <code>EntityAICollectLoot</code> task doesn't yet do
+        anything).
+    </li></ol>
+
+
+    <h3>Part 3 — Implement Basic <code>CollectorBot</code> Functionality</h3>
+    <p class="indented"> Now it's time to implement the basic loot searching and collection task.
+      We want the robot to find the nearest piece of loot
+      (<code>net.minecraft.entity.item.EntityItem</code>) within its search radius, make its way
+      to that item, and then pick it up.
+
+    </p><ol>
+
+      <li> In the <code>EntityAICollectLoot</code> task class, we now need to implement the first
+        phase of <code>updateTask()</code>. To begin with, we'll first need a task class variable
+        to track the currently targeted piece of loot: call it <code>targetLoot</code>. Loot items
+        wil be of type <code>EntityItem</code>. Initialize it to <code>null</code> to begin
+        with.
+
+      </li><li> The <code>updateTask()</code> method has two parts: in the first part, the task is to
+        choose a piece of loot if we don't currently have one targeted. In the second part, when
+        we have a piece of loot chosen, the task is to move to and collect that item.
+
+      </li><li> Create a function to select the next piece of loot. It will only be used by the
+        <code>EntityAICollectLoot</code> task, so it should be private. It will return the
+        selected <code>EntityItem</code>, and doesn't need any arguments. Call it
+        <code>selectNewTarget</code>.
+
+      </li><li> <p>In the <code>selectNewTarget</code> function, get a list of all entities in the
+        collector bot's world. You will then iterate through this list, and find the entity that
+        matches the following criteria:
+
+        </p><ol class="compact">
+          <li> it must be an instance of <code>EntityItem</code>,
+          </li><li> it must not be marked "dead" (<code>item.isDead</code>), and
+          </li><li> it must be within the search radius of the collector bot's location.
+          </li><li> it must be the single closest entity
+          </li></ol>
+
+        <p> (Note that items are marked dead when when they are scheduled to be deleted or are
+          destroyed by another entity.)
+
+      </p></li><li> If you find an item that matches the above criteria, then set that item as the target
+        loot, and return the new target.
+
+      </li><li> At the beginning of <code>updateTask()</code>, if we don't currently have a target loot
+        item, get a new piece of target loot using the <code>selectNewTarget()</code> function.
+        If we couldn't find a new target item that meets our criteria, then return from
+        <code>updateTask()</code>.
+
+      </li><li> After we've made sure that we have an item as our target loot, check to see if anything
+        has marked it as dead. If so, stop the robot's navigation, set <code>targetLoot</code> to
+        null, and return from <code>updateTask</code>.
+
+      </li><li> Move towards the loot target at normal speed.
+
+      </li><li> If the collector bot is within a distance of 1.5 from the target loot, then it can pick
+        it up. Stop the robot navigation, remove the target loot from the world, and set the
+        targetLoot to null.
+
+      </li><li> <p>Test out the collector bot. To do this, load items in your inventory that you can
+      drop for the collector bot to find. When you bring up the inventory in game, you can click
+      on an item multiple times to create a "stack" of items (you'll see a count over the selected
+      item). Drag this stack of items to an inventory slot, and hit escape to get back to the
+      game. In game, select the item slot you want, and then drop these items by pressing the
+      '<kbd>q</kbd>' key. Now spawn the collector bot with the "<kbd>/robot collector</kbd>"
+      command. It should run around and gather up the items you dropped.
+
+    </p></li></ol>
+
+
+    <h3>Part 4 — Track items in the robot's inventory</h3>
+    <p class="indented"> Up to now, the robot really just removes items from the world; it just
+    looks like it's been picking them up. Now we need to actually keep track of the items that the
+    robot has gathered. We'll need this for the next part, where the robot drops all the items it
+    has collected.
+    </p><ol>
+
+      <li> The first task is to add an item inventory to the <code>CollectorBot</code>. We'll use
+        a <code>HashMap&lt;Item,Integer&gt;</code> for this. Individual items will be the keys for
+        this inventory, and the values will be the total count for each item. Create a class
+        member variable for this (name it <code>inventory</code>), and initialize it to a new
+        HashMap.
+
+      </li><li> <p>Add a new <code>CollectorBot</code> method with the following signature:
+        <codeblock>public void addItem (EntityItem <var>entityItem</var>)</codeblock>
+
+      </p></li><li> In the new <code>addItem</code> function, as outlined in the notes section, you'll get
+        the item stack from the given <var>entityItem</var>. From that, you'll get the
+        item and item count. Compute the new total count for that item type. You will need to
+        handle the case where the robot currently has no items of that type, and the case where it
+        already has some number of those items. Once you've computed the new total, put that entry
+        in the <code>inventory</code> hash map.
+        
+      </li><li> It may help to create a small function to print the current robot inventory (using
+        <code>System.out.printf()</code>) as you develop this part. See the notes section for a
+        way to examine the contents of a hash map, and the tip for getting a printableItemName for
+        a given item. You can use this for your inventory print routine, which you can then call
+        every time you add a new item.
+
+      </li><li> Now that you have a way to add and track items to the robot's inventory, we need to
+        have the <code>EntityAICollectLoot</code> task call this method when we pick up new loot.
+        Do this in <code>updateTask()</code>, when we determine that we're within range of our
+        target loot. Add the call to <code>robot.addItem</code> when we pick up the target loot.
+
+      </li><li> Is everything implemented correctly? Run the game to find out. Make sure that the robot
+        picks up items. If you implemented the debug print function, verify that the inventory is
+        growing as you expect.
+
+    </li></ol>
+
+
+    <h3>Part 5 — Drop all items when the robot is damaged</h3>
+    <p class="indented"> Now we'll add the behavior that the robot drops all of its inventory
+      whenever it receives any damage.
+    </p><ol>
+      <li> <p>First, we'll provide an override of the <code>CollectorBot</code>'s
+        <code>onEntityDamage</code> method. The signature for this method is
+        <codeblock class="indented">public void onEntityDamage (DamageSource <var>source</var>, float <var>amount</var>);</codeblock>
+        </p><p>The implementation of this method is simple: just call a new <code>CollectorBot</code>
+        method <code>dropInventory()</code> with no arguments.
+
+      </p></li><li> Now we need to implement <code>private void dropInventory()</code>. This method needs
+        to iterate through all items in its inventory, and drop the correct count of each item.
+        See the notes section for <code>dropItem</code>. Once all items have been dropped, clear
+        the robot's inventory. The notes section has the information you need on how to clear a
+        hash map.
+
+      </li><li> After dropping the robot's inventory, and if you implemented the
+        <code>printInventory</code> debug method, you may want to call this to verify that nothing
+        is left in the robot's inventory.
+
+      </li><li> Time to test. Run the game, toss out a bunch of items for the robot to collect, and
+        then smack it. You will probably see that the robot turns red when you hit it, but
+        otherwise nothing else will look different. In particular, there won't be a bunch of
+        objects laying around the robot. What happened?
+
+      </li><li> The <code>CollectorBot</code> is very industrious. Even if it properly dropped all of
+        its inventory on the ground, the <code>EntityAICollectLoot</code> task is still running,
+        so it will just immediately think "look at all this loot!", and pick it right back up. You
+        can keep thwacking <code>CollectorBot</code> upside the head, and it will keep dropping
+        and immediately picking back up all of its loot until it keels over, keeping everything it
+        gathered. Now what?
+
+    </li></ol>
+
+
+    <h3>Part 6 — CollectorBot stops collecting items when damaged</h3>
+    <p class="indented"> The key to making <code>CollectorBot</code> more useful is adding a delay
+    before it picks up all items it dropped. We'll have the robot wander around stunned for a
+    while before the its loot collection task resumes. That will complete our
+    <code>CollectorBot</code> implementation.
+
+    </p><ol>
+
+      <li> In <code>EntityAICollectLoot</code>, we're going to add support for suspending the
+        collection task for a period of time. We'll be modifying the <code>shouldExecute</code>
+        and <code>continueExecuting</code> tasks to do this. Before we do that, we'll need a new
+        private long field named <code>suspendEnt</code> before we start. Initialize it to zero to
+        start with. This field will store the time at which task suspension is over.
+
+      </li><li> Reference the notes section to review system time methods.
+
+      </li><li> <p> Add a new method with the following signature:
+        <codeblock>public void suspend (float <var>suspendSeconds</var>)</codeblock>
+        </p><p> This method will take the specified number of seconds and the current time in
+        milliseconds, and compute the time when the task suspension should end (also in
+        milliseconds). Store that result in <code>suspendEnd</code>.
+
+      </p></li><li> If <code>suspendEnd</code> is zero, then we are not suspended. Given that, update the
+        <code>continueExecuting</code> method to return true only if we're not currently
+        suspended.
+
+      </li><li> Update the <code>shouldExecute</code> method. Given the current system time and the
+        suspendEnd variable, determine if we're still in the suspend time period. If we are still
+        suspended, then return false (we should not execute the task). If we are either not
+        suspended or are now past the suspension time period, set <code>suspendEnd</code> to zero
+        to indicate that the collection task is not suspended, and return true (we should execute
+        our main task).
+
+      </li><li> Back in the <code>CollectorBot</code> class, and using the code we just wrote above,
+        suspend the collection task for 20 seconds when we take any damage.
+
+      </li><li> Time for the final test. Run the game, and feed the collector bot a bunch of items. Now
+        smack the bot (from a distance), and you should notice that it drops all of its loot, and
+        doesn't pick it back up. (Note that if you're too close, your player will end up picking
+        up the items, which is why you want a bit of distance before striking the robot.) Wait 20
+        seconds, and verify that the robot starts picking things up again.
+
+    </li></ol>
+
+
+    <h3>Part 7 — Fit &amp; Finish</h3>
+      <p class="indented"> Take a look at all of your code. You've added a bunch, changed a bunch,
+      and probably wrestled a bit with different parts. How can you make the code cleaner? Easier
+      to read? Are you using magic numbers where you should instead have used class constants? Is
+      your code well documented? Review the program logic and see if you can accomplish the same
+      tasks in simpler ways. How much code can you simplify or reduce? Re-order your methods so
+      that reviewers and other programmers can follow the logic easier. Are there places where you
+      could use a variable to hold a common result? Are your variable names clear? These are just
+      a few things to look at, but make a huge difference in your final result.
+
+  </p></div> <!-- #tasks -->
+
+</div> <!-- #content -->
+
+
+<div id="footer">
+  <div class="prev"><a href="https://tealsk12.github.io/teals-minecraft/site/labs/lab8.html">◀ Lab 8</a></div>
+  <div class="home"><a href="https://tealsk12.github.io/teals-minecraft/site/units.html">Home</a></div>
+</div>
+</body></html>
